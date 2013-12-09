@@ -10,7 +10,7 @@ The motion sensor can easily be constructed as follows:
     to attach the copper wire to the sheet of paper. Leave 
     bare copper exposed intermittently across the paper.
   * Connect one end of the copper wire to ground.
-  * Attach a spring contact (or any piece of conductive material
+  * Attach a spring contact (or any piece of conductive material)
     to a wooden dowel.
   * Connect the spring contact to 5V through a 10Kohm resistor.
   * Connect the node between the spring contact and the resistor to
