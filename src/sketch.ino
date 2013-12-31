@@ -1,4 +1,8 @@
 // -*- c -*-
+// Motion Sensor Sketch
+//
+// Copyright (c) 2013 Dave Sieh
+// See LICENSE.txt for details.
 /**
    Circuit is connected as follows:
    

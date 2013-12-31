@@ -25,3 +25,11 @@ will be on. When you stop moving, the LED will be off. The serial monitor
 will also inform you of the state of motion.
 
 That's it.
+
+Copyright
+=========
+
+Copyright (c) 2013 Dave Sieh
+
+See LICENSE.txt for details.
+
