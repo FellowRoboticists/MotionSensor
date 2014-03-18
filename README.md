@@ -29,7 +29,7 @@ That's it.
 Copyright
 =========
 
-Copyright (c) 2013 Dave Sieh
+Copyright (c) 2013,2014 Dave Sieh
 
 See LICENSE.txt for details.
 

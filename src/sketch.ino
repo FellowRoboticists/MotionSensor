@@ -1,7 +1,7 @@
 // -*- c -*-
 // Motion Sensor Sketch
 //
-// Copyright (c) 2013 Dave Sieh
+// Copyright (c) 2013,2014 Dave Sieh
 // See LICENSE.txt for details.
 /**
    Circuit is connected as follows:
@@ -11,6 +11,8 @@
    Other end of 10k resistor connected to digital pin 7 and
    connection tab (the thing that drags along the gapped wire).
  */
+
+#include <pspc_support.h>
 
 #define SENSOR_DETECT_PIN 7
 #define LED_PIN 13
@@ -45,7 +47,7 @@ void setup()
   pinMode(SENSOR_DETECT_PIN, INPUT);
   digitalWrite(LED_PIN, LOW);
   
-  Serial.println("Ready!");
+  Serial.println(P("Ready!"));
 }
 
 void loop()
@@ -75,7 +77,7 @@ void handleValueChange(int value) {
   lastChangeTime = millis();
   currentState = Moving;
   digitalWrite(LED_PIN, HIGH);
-  Serial.println("Now moving...");
+  Serial.println(P("Now moving..."));
 }
 
 void handleValueNoChange(int sampleTime) {
@@ -83,8 +85,8 @@ void handleValueNoChange(int sampleTime) {
   if (duration > STOP_THRESHOLD) {
     currentState = Stopped;
     digitalWrite(LED_PIN, LOW);
-    Serial.print("No change for too long (");
+    Serial.print(P("No change for too long ("));
     Serial.print(duration);
-    Serial.println(") ms. Stopped");
+    Serial.println(P(") ms. Stopped"));
   }
 }
